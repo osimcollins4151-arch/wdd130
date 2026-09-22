@@ -11,7 +11,10 @@
     --body-font: Ariel, Helvetica, sans-serif;
 }
 
-* {
+/* CSS Reset with box-sizing */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +22,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 
 header,
@@ -61,7 +64,7 @@ div img {
     width: 150px;
     border: 3px solid black;
     border-radius: 100px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px rgb(47, 199, 27);
 }
 
 h1 {
@@ -71,9 +74,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: #fff;
-
 }
 
 .hero article {
@@ -88,5 +90,5 @@ h1 {
     float: right;
     width: 125px;
     margin: auto;
-    box-shadow: #264653;
+    box-shadow: 5px 5px 10px #738319;
 }
