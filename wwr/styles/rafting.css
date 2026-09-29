@@ -3,8 +3,6 @@
     /* forest green */
     --secondary-color: #f4a261;
     /* warm sad */
-    --accent1-color: #300;
-    /* dark slate blue */
     --accent2-color: #e9e16a;
     /* light golden yellow */
     --heading-font: "Times New Roman", "georgia", serif;
@@ -34,7 +32,6 @@ footer {
 
 header img {
     width: 100px;
-    height: 0 auto;
 }
 
 h1,
@@ -116,7 +113,7 @@ header {
 
 nav {
     display: flex;
-    text-align: right:
+    text-align: right;
 }
 
 nav ul {
