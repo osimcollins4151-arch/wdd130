@@ -152,25 +152,23 @@ nav ul {
     grid-column: 3;
 }
 
-.image-row {
+.adventure-gallery {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 5px;
+    gap: 10px;
 
 }
 
-.image-row img {
-    width: 18%;
-    height: 100px;
-    padding: 5px;
-    object-fit: cover;
-}
-
-.image-row figcaption {
-    margin-top: 0.5rem;
+.adventure-gallery figure {
+    margin: 0;
     text-align: center;
-    font-size: 0.9rem;
+    flex: 1;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 footer nav {
