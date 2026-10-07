@@ -31,7 +31,10 @@ footer {
 }
 
 header img {
-    width: 100px;
+    width: 90px;
+    height: 80px;
+    object-fit: cover;
+    justify-content: center;
 }
 
 h1,
@@ -58,7 +61,7 @@ article {
     position: relative;
 }
 
-div img {
+.hero div img {
     display: block;
     width: 100%;
     height: auto;
@@ -107,8 +110,13 @@ h2 {
 
 header {
     display: grid;
-    grid-template-columns: 120px 1fr 1fr;
+    grid-template-columns: 180px 1fr;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: #d8c5f5;
+    border: 1px solid #555;
 }
 
 nav {
@@ -119,12 +127,27 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    width: 300px;
+    width: auto;
     margin: 0;
-    justify-content: space-around;
-    gap: 10px;
     padding: 0;
-    border: 2px solid rgb(0 0 0 / 5%);
+}
+
+nav li {
+    border: 1px solid #777;
+    width: 120px;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 5px 12px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f4a261;
 }
 
 .history {
@@ -144,8 +167,9 @@ nav ul {
     grid-column: 1;
 }
 
-.history-img {
+.history img {
     grid-column: 2;
+    width: 100%;
 }
 
 .history-text-right {
@@ -184,6 +208,151 @@ footer div {
 }
 
 .socialmedia img {
-    width: 40%;
+    width: 40px;
+}
 
+.contact-header {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-header h1 {
+    position: static;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.contact-header h2 {
+    margin-bottom: 10px;
+}
+
+.contact-header address {
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.contact-form {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-item p {
+    margin: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.form-item textarea {
+    height: 80px;
+}
+
+.form-item:nth-child(3) {
+    display: block;
+}
+
+.form-item:nth-child(3) p {
+    margin-bottom: 8px;
+}
+
+.form-item:nth-child(3) label {
+    display: block;
+    margin-right: 5px;
+}
+
+/* Align purpose of message radio buttons */
+.form-item.column1 > label:nth-of-type(-n+3) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 5px 0;
+    padding-left: 5px;
+}
+
+.form-item.column1 input[type="radio"] {
+    margin: 0;
+}
+
+/* Keep newsletter subscription on one line */
+.form-item.column1 > label:last-child {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.form-item input[type=checkbox] {
+    margin-right: 5px;
+}
+
+.form-item button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.employee-section {
+    border: 1px solid #777;
+    margin: 25px auto;
+    padding: 10px;
+    max-width: 1000px;
+}
+
+.employee-section h2 {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.employee-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.employee-profiles figure {
+    margin: 0;
+}
+
+.employee-profiles img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.employee-profiles figcaption {
+    margin-top: 8px;
 }
