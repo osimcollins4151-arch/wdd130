@@ -35,7 +35,7 @@
                 Federal Capital Territory, Nigeria
             </address>
 
-            <section class="contact-section">
+            <div class="contact-section">
                 <div class="map">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9211424340083!2d7.412172173673613!3d9.070948788333673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e751fdb7437d5%3A0xf33ed75ea0737a5d!2sJabi%20Lake%20Park%20Abuja!5e0!3m2!1sen!2sng!4v1791210208686!5m2!1sen!2sng"
@@ -58,18 +58,20 @@
                     <div class="form-item">
                         <p>Purpose of Message:</p>
 
-                        <label>
-                            <input type="radio" id="purpose" name="purpose" value="general">
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general">
                             General Inquiry
                         </label>
 
-                        <label>
-                            <input type="radio" id="purpose" name="purpose" value="reservation">
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose" name="purpose-reservation"
+                              value="reservation">
                             Reservation Question
                         </label>
 
-                        <label>
-                            <input type="radio" id="purpose" name="purpose" value="suggestion">
+                        <label for="purpose=suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion">
                             Website Suggestion
                         </label>
                     </div>
@@ -80,16 +82,16 @@
                     </div>
 
                     <div class="form-item.column1">
-                        <label>
+                        <label for="subscribe">
                             <input type="checkbox" id="subscribe" name="subscribe">
                             Please subscribe me to the monthly newsletter
                         </label>
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send Message</button>
 
                 </form>
-            </section>
+            </div>
 
             <section class="employee-section">
                 <h2>We Are Here to Serve You</h2>
@@ -119,6 +121,7 @@
                     </figure>
                 </div>
             </section>
+        </section>
     </main>
     <footer>
         <div>
